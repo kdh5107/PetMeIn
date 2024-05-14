@@ -14,6 +14,7 @@ function App() {
     <div className="App">
       {message}
       hi
+      hihi
     </div>
   );
 }
