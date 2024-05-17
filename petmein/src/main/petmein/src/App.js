@@ -1,20 +1,14 @@
 import "./App.css";
 import { useEffect, useState } from "react";
+import TopNav from "./nav/top-nav";
+import BottomNav from "./nav/bottom-nav";
 
 function App() {
-  const [message, setMessage] = useState("");
-  useEffect(() => {
-    fetch("/api/hello")
-      .then((response) => console.log(response.text()))
-      .then((message) => {
-        setMessage(message);
-      });
-  });
   return (
     <div className="App">
-      {message}
-      hi
-      hihi
+      <TopNav></TopNav>
+      <div>본문</div>
+      <BottomNav></BottomNav>
     </div>
   );
 }
